@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+body{
+    padding: 0;
+    margin: 0;
+    background-color:#1E1E1E;
+    background-image: url("./img/fundo3.png");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: right top;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+   
+}
+
+:root{
+    --branco: #FFFFFF;
+    --preto: #1E1E1E;
+    --azul-ciano: #89d1f3;
+    --azul-claro: #2795E8;
+    --azul-escuro: #4E4DFF;
+}
+.bot_menu{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    color: var(--branco);
+    position: absolute;
+    top: 100px;
+    left: 50px;
+}
+.bot_menu:focus~.menu{
+    left: 0;
+}
+.bot_menu:hover~.menu{
+    left: 0;
+}
+.menu:hover, .menu:focus{
+    left: 0;
+}
+.menu{
+    
+    display: flex;
+    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    background-color:#131313;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left:-500px;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+
+}
+.menu a{
+    color: var(--branco);
+}
+.menu p{
+    font-size: 20px;
+    transition: 0.5s;
+}
+.menu p:hover, .menu:focus{
+    transform: scale(1.05);
+}
+.menu img{
+    width: 150px;
+    border-radius:90px;
+    transition: 0.5s;
+}
+.menu img:hover, .manu img:focus{
+    transform: scale(1.05);
+}
+h1{
+    margin: 100px 0;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 70px;
+    text-align: center;
+    color: var(--branco);
+    text-shadow: 1px 1px 1px var(--preto);
+}
+.site{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    font-family: 'Bebas Neue', cursive;
+    background-color: var(--azul-ciano);
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.site:hover, .site:focus{
+    transform: scale(1.05);
+    background: none;
+    color: var(--branco);
+}
+.sites{
+
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20%;
+    
+
+}
+.sites:last-child{
+    margin-bottom: 500px;
+    position: relative;
+}
+a{
+    text-decoration: none;
+    color: var(--preto);
+}
+
+.perfil-bola{
+    background-color: #4E4DFF;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: none;
+    transition: 0.6s;
+}
+#sair{
+    background-color: #4E4DFF;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    position: fixed;
+    bottom: 10px;
+    right: -100px;
+    transition: 0.6s;
+
+}
+.perfil-bola img{
+    width: 30px;
+}
+@media screen and (max-width: 1000px){
+    body{
+        background-size: 100%;
+        background-image: url("./img/fundo2.png");
+        background-attachment:scroll;
+        
+    }
+    .sites{
+        display: block;
+    }
+    .site{
+        border-radius: 30px;
+        width: 60vw;
+        height: 200px;
+    }
+    h1{
+        margin: 80px 30px;
+    }
+    .bot_menu{
+        display: none;
+    }
+    .menu{
+        font-size: 50px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .menu img{
+        width: 100px;
+        
+    }
+    .menu p, h3{
+        font-size: 30px;
+    }
+    .perfil-bola{
+        display: flex;
+
+    }
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FY508L41QM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-FY508L41QM');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio Dev</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function mostrar(){
+            document.getElementById("menu_lateral").style.left = "0";
+            document.getElementById("bola").style.right = "-100px";
+            document.getElementById("sair").style.right = "10px";
+        }
+        function sair(){
+            document.getElementById("sair").style.right = "-100px";
+            document.getElementById("menu_lateral").style.left = "-500px";
+            document.getElementById("bola").style.right= "10px";
+        }
+    </script>
+</head>
+<body>
+    <p class="bot_menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="50"  fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+            <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+          </svg>
+    </p>
+    <section class="menu">
+        <img src="./img/perfil.jfif" alt="Foto de be fernandes">
+        <h3>Be Fernandes</h3>
+        <a href="">
+            <p>Linkedin</p>
+        </a>
+    </section>
+    <section id="menu_lateral" class="menu">
+        <img src="./img/perfil.jfif" alt="Foto de be fernandes">
+        <h3>Be Fernandes</h3>
+        <a href="">
+            <p>Linkedin</p>
+        </a>
+    </section>
+    <h1>Portifólio Dev</h1>
+    <section class="sites">
+        <a href="https://milara.netlify.app"><div class="site">Milara</div></a>
+        <a href="https://techfernadnes.netlify.app"><div class="site">TECH</div></a>
+        <a href="https://strangerthings01.netlify.app"><div class="site">Netflix</div></a>
+        <a href="https://befernandes25.github.io/perfil_beleza.github.io/"><div class="site">Salão</div></a>
+        <a href="https://astonishing-kitsune-a579ec.netlify.app"><div class="site">Barbearia</div></a>
+    </section>
+    <section class="sites">
+        <a href="https://befernandes25.github.io/galeria_fotos.github.io/"><div class="site">Galeria</div></a>
+        <a href="https://formulariocadastrobe.netlify.app"><div class="site">Cadastro</div></a>
+        <a href="https://befernandes25.github.io/pizzalove.github.io/"><div class="site">PizzaLove</div></a>
+        <a href="https://github.com/BeFernandes25/Music_JS"><div class="site">Música</div></a>
+        <a href=""><div class="site">(Em Breve)</div></a>
+
+    </section>
+
+    <button id="bola" onclick="mostrar()" class="perfil-bola">
+    <img src="./img/pencil.svg" alt="editar">
+       
+    </button>
+    <button id="sair" onclick="sair()" class="perfil-bola">
+        <img src="./img/x-circle.svg" alt="sair">
+    </button>
+    
+    
+</body>
+</html>
